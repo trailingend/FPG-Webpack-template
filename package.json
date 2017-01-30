@@ -1,0 +1,46 @@
+{
+  "name": "fpg-webpack-template",
+  "version": "1.0.0",
+  "description": "For my Q1 2017 OKR, creating an webapack based template",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development webpack-dev-server --open",
+    "clean": "rimraf dist",
+    "build": "NODE_ENV=production npm run clean && webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/trailingend1992/FPG-Webpack-template.git"
+  },
+  "keywords": [
+    "webpack",
+    "scss"
+  ],
+  "author": "JL",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trailingend1992/FPG-Webpack-template/issues"
+  },
+  "homepage": "https://github.com/trailingend1992/FPG-Webpack-template#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "jquery": "^3.1.1",
+    "lodash": "^4.17.2",
+    "node-sass": "^4.4.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.0",
+    "babel-preset-env": "^1.1.4",
+    "css-loader": "^0.26.1",
+    "file-loader": "^0.9.0",
+    "html-webpack-plugin": "^2.24.1",
+    "copy-webpack-plugin": "^4.0.1",
+    "rimraf": "^2.5.4",
+    "sass-loader": "^4.1.1",
+    "style-loader": "^0.13.1",
+    "webpack": "^2.2.0-rc.0",
+    "webpack-dev-middleware": "^1.9.0",
+    "webpack-dev-server": "^2.2.0-rc.0"
+  }
+}
